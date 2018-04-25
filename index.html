@@ -1,0 +1,77 @@
+<html>
+  <head>
+   <!--META TAGS-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="To Do App" content="ToDos"/>
+
+    <title>A To Do App</title>
+
+    <!-- Bootstrap, Fonts, CSS -->
+
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <!--AnimateCSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!--Font Awesome-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+<section class="header">
+  <div class="row align-items-center page-header">
+   <div class="col-md-2 text-right">
+      <img class="img-fluid starfleet-command" src="images/starfleetcommand.png" alt="Starfleet Command Logo">
+   </div>
+   <div class="col-md-10 text-left">
+     <p class="federation">Captain's Log</p>
+     <p class="heading-subtitle">To Do List</p>
+     <br>
+   </div>
+  </div>
+</section>
+
+
+<section class="todo-section">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-10 text-left">
+      <p class="direction1">Enter your to do:</p>
+      <input class="your-todo" type="text" name="name">
+      <button id="submit-todo" type="button" class="btn submit">Enter!</button>
+      <ul id="todos">
+
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

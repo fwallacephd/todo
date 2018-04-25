@@ -1,0 +1,55 @@
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* BODY */
+
+/* FONTS */
+/* font-family: 'IBM Plex Sans Condensed', sans-serif;
+*/
+
+@font-face {
+    font-family: strategy;
+    src: url(strategy.otf);
+}
+
+/* HEADER */
+.starfleet-command {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.federation {
+    font-family: strategy;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+
+.heading-subtitle {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 20px;
+}
+
+/* TO DO LIST */
+.todo-section {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.your-todo {
+    border: 2px solid #CB1914;
+    width: 32%;
+}
+
+.submit {
+    background-color: black;
+    color: white;
+}
