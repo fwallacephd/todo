@@ -53,3 +53,7 @@
     background-color: black;
     color: white;
 }
+
+#todos {
+    list-style-type: none;
+}
