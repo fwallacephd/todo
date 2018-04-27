@@ -6,18 +6,15 @@ $("#submit-todo").on("click", function(){
   //Get the value of the todo
   todoText = $("[name=todo-item]").val();
   //Create a new <li>
-  var newLi = $("<li>" + todoText + "</li>");
+  var newLi = $("<li> <input class='complete' type='checkbox' name='complete'></input> " + todoText + "</li>");
   //Append the new <li>
   $("#todos").append(newLi);
 
   //Create the delete button
   var deleteText = "Abort";
   var deleteButton = $("<button>" + deleteText + "</button>").addClass("btn delete");
-  $("#todos li").append(deleteButton);
+  newLi.append(deleteButton);
 
-  //Add Checkbox
-  var checkbox = $("<input type='checkbox' name='complete'></input>").addClass("complete");
-  $("#todos li").append(checkbox);
 
   //Reset the value of the todo
   $(".your-todo").val('');
@@ -28,12 +25,21 @@ $("#submit-todo").on("click", function(){
 //Delete Functionality
 $("#todos").on("click", ".delete", function(){
   var $li = $(this).parent();
-  console.log($li);
   $li.remove();
 });
 
 //Completed Functionality
 $("#todos").on("click", ".complete", function(){
   var $li = $(this).parent();
-  $li.css("text-decoration", "line-through");
-})
+  if ($(this).prop("checked")) {
+    $li.css("text-decoration", "line-through");
+  } else {
+    $li.css("text-decoration", "none");
+  }
+});
+
+
+//Edit ToDo Functionality
+$("#todos").on("dblclick", "li", function() {
+  console.log("click");
+});

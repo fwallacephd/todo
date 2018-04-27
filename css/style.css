@@ -56,12 +56,14 @@
 
 #todos {
     list-style-type: none;
+    width: 60%;
 }
 
 .delete {
     background-color: black;
     color: white;
     margin-left: 10px;
+    float: right;
 }
 
 .complete {
